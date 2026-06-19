@@ -86,7 +86,7 @@ a {
     inset: 0;
     background:
       linear-gradient(180deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.12)),
-      url("./recursos/Imagen 1-01.jpg") center center / cover no-repeat;
+      url("./Recursos/Imagen 1-01.jpg") center center / cover no-repeat;
     transform: scale(1.01);
   }
 
@@ -432,7 +432,7 @@ a {
 
   .mobile-hero {
     min-height: min(52vh, 420px);
-    background: url("./recursos/Imagen 2-03.jpg") center center / cover no-repeat;
+    background: url("./Recursos/Imagen 2-03.jpg") center center / cover no-repeat;
   }
 
   .mobile-hero-copy {
