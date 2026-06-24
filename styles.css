@@ -31,8 +31,8 @@
 }
 
 :root {
-  --violet: #6f0fb9;
-  --violet-dark: #5f0ba2;
+  --violet: #5A00AA;
+  --violet-dark: #4A0090;
   --sky: #b7e3ff;
   --sky-soft: #a8d8f7;
   --text: #111111;
@@ -473,7 +473,7 @@ a {
     display: inline-block;
     font-size: clamp(1.82rem, 7vw, 2.45rem);
     line-height: 0.88;
-    padding: 0.07em 0.24em 0.12em 0.18em;
+    padding: 0.07em 0.175em 0.12em 0.18em;
     letter-spacing: 0.01em;
     text-transform: uppercase;
     font-family: "Neue Plak Condensed", "Neue Plak", sans-serif;
@@ -497,7 +497,7 @@ a {
   .mobile-hero-copy .hero__rules {
     display: flex;
     flex-direction: column;
-    width: 58%;
+    width: 54%;
     /* max-width: 300px; */
     margin: 8px 0 10px;
     margin-left: 22px;
@@ -598,7 +598,7 @@ a {
     min-height: 46px;
     padding: 0.72rem 0.9rem;
     margin: 0 auto;
-    background: #6f0fb9;
+    background: var(--violet);
     color: #fff;
     border-radius: 8px;
     white-space: nowrap;
