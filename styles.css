@@ -117,24 +117,24 @@ a {
     padding-bottom: clamp(34px, 4vh, 94px);
     color: #fff;
     max-width: 860px;
+    margin-top: 5%;
 }
 
   .hero__headline {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 1px;
     width: min(100%, 900px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
   }
 
   .hero__line {
     display: inline-block;
-    padding: 0.06em 0.3em 0.2em 0.24em;
+    padding: 0.03em 0.19em 0.16em 0.16em;
     line-height: 0.88;
-    letter-spacing: -0.03em;
+    letter-spacing: 0.012em;
     text-transform: uppercase;
     font-family: "Neue Plak Condensed", "Neue Plak", sans-serif;
-    font-size: clamp(3.2rem, 5.6vw, 5.8rem);
+    font-size: clamp(3rem, 5.4vw, 5.6rem);
     font-weight: 900;
   }
 
@@ -149,7 +149,7 @@ a {
     color: var(--violet);
     background: var(--sky);
     width: fit-content;
-    margin-left: 0.02em;
+    /* margin-left: 0.02em; */
     max-width: 100%;
   }
 
@@ -157,8 +157,9 @@ a {
     display: flex;
     flex-direction: column;
     /* gap: 8px; */
-    width: min(52%, 520px);
-    margin: 14px 0 20px;
+    width: min(100%, 560px);
+    margin: 12px 0 14px;
+    width: 61%;
   }
 
   .hero__rules span {
@@ -169,39 +170,40 @@ a {
   }
 
   .hero__rules span:first-child {
-    width: 57%;
+    width: 50%;
   }
 
   .hero__rules span:last-child {
-    width: 57%;
-    margin-left: 57%;
+    width: 50%;
+    margin-left: 50%;
     background: rgba(255, 255, 255, 0.92);
   }
 
   .hero__prompt {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    width: min(100%, 900px);
-    font-size: clamp(0.95rem, 1.35vw, 1.2rem);
+    justify-content: flex-start; */
+    /* width: min(100%, 500px); */
+    font-size: clamp(0.92rem, 1.2vw, 1.08rem);
     line-height: 1.2;
-    padding: 0.45rem 0.85rem;
+    padding: 0.34rem 0.68rem;
     background: rgba(255, 255, 255, 0.96);
     color: var(--violet);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-    max-width: 59%;
+    /* max-width: 560px; */
+    width: 61%;
+    font-size: 1.4rem;
   }
 
   .hero__prompt strong {
     font-weight: 700;
-    padding-right: 1.5%;
-    padding-left: 2%;
   }
 
   .hero__grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
-    width: min(100%, 560px);
+    width: min(100%, 420px);
     margin-top: 28px;
   }
 
@@ -209,8 +211,8 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
-    min-height: 60px;
-    padding: 0 14px;
+    min-height: 44px;
+    padding: 0 8px;
     background: rgba(0, 0, 0, 0.18);
     color: #fff;
     border: 1px solid rgba(183, 227, 255, 0.8);
@@ -239,13 +241,15 @@ a {
   }
 
   .login-panel {
-    justify-self: flex-start;
-    width: min(90%, 610px);
-    padding: clamp(28px, 3vw, 44px) clamp(28px, 3.2vw, 54px) clamp(34px, 3.8vw, 56px);
+    /* justify-self: center; */
+    /* width: min(100%, 570px); */
+    /* padding: clamp(24px, 2.8vw, 40px) clamp(24px, 2.8vw, 40px) clamp(28px, 3vw, 44px); */
     background: var(--panel);
     border-radius: 34px;
     box-shadow: var(--shadow);
     backdrop-filter: blur(14px);
+    /* width: 85%; */
+    padding: 18% 10%;
   }
 
   .brand {
@@ -258,28 +262,32 @@ a {
 
   .brand__logo {
     display: block;
-    width: min(100%, 520px);
+    width: min(100%, 480px);
     max-width: 90%;
     height: auto;
   }
 
   .login-panel h1,
   .mobile-panel h1 {
-    margin: 48px 0 0;
+    /* margin: 36px 0 0; */
     text-align: center;
-    font-size: clamp(2rem, 3vw, 3.2rem);
+    /* font-size: clamp(1.9rem, 2.7vw, 3rem); */
     line-height: 0.96;
-    font-weight: 600;
+    font-weight: 700;
+    margin-top: 15%;
+    margin-bottom: 9%;
+    font-size: 2.2rem;
   }
 
   .login-panel__eyebrow {
-    margin: 30px 0 16px;
+    margin: 22px 0 12px;
     text-align: center;
     color: var(--violet);
-    font-size: clamp(0.98rem, 1.35vw, 1.26rem);
+    /* font-size: clamp(0.9rem, 1.1vw, 1.1rem); */
     line-height: 1;
     font-weight: 700;
     text-transform: uppercase;
+    font-size: 1.3rem;
   }
 
   .google-button {
@@ -288,10 +296,10 @@ a {
     align-items: center;
     justify-content: center;
     gap: 4px;
-    min-height: 58px;
-    padding: 1.05rem 1.4rem;
+    min-height: 50px;
+    padding: 0.85rem 1rem;
     margin: 0 auto;
-    width: min(100%, 460px);
+    width: min(100%, 420px);
     max-width: 100%;
     border-radius: 8px;
     background: var(--violet);
@@ -300,7 +308,7 @@ a {
   }
 
   .google-button__text {
-    font-size: clamp(0.98rem, 1.25vw, 1.15rem);
+    font-size: clamp(0.9rem, 1.1vw, 1.02rem);
     line-height: 1;
     display: flex;
     width: 100%;
@@ -308,6 +316,8 @@ a {
     justify-content: center;
     gap: 6px;
     text-align: center;
+    margin-top: -4px;
+    font-size: 1.4rem;
   }
 
   .google-button__brand {
@@ -317,17 +327,20 @@ a {
 
   .password-link {
     display: block;
-    margin-top: 12px;
+    margin-top: 8px;
     text-align: center;
-    font-size: clamp(0.88rem, 1vw, 0.98rem);
+    font-size: clamp(0.84rem, 0.95vw, 0.92rem);
     font-weight: 400;
+    margin: 7% 0%;
   }
 
   .help-links {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
-    margin-top: clamp(60px, 8vh, 100px);
+    margin-top: 20px;
+    width: min(100%, 420px);
+    justify-self: center;
   }
 
   .help-link {
@@ -335,12 +348,12 @@ a {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    min-height: 42px;
-    padding: 0.62rem 0.9rem;
+    min-height: 40px;
+    padding: 0.5rem 0.75rem;
     background: var(--sky-soft);
     color: var(--violet);
     border-radius: 4px;
-    font-size: clamp(0.86rem, 0.98vw, 1rem);
+    font-size: clamp(0.84rem, 0.95vw, 0.96rem);
     font-weight: 700;
     box-shadow: 0 8px 18px rgba(111, 15, 185, 0.08);
   }
@@ -396,7 +409,10 @@ a {
   .home__copyright {
     grid-column: 2;
     justify-self: center;
-    margin: 18px 0 0;
+    align-self: start;
+    margin: 6px 0 0;
+    width: min(100%, 540px);
+    text-align: center;
     color: #fff;
     font-size: clamp(1rem, 1.18vw, 1.32rem);
     font-weight: 700;
@@ -418,7 +434,6 @@ a {
   }
 
   .mobile-brand .brand {
-    gap: 12px;
     justify-content: center;
   }
 
@@ -431,7 +446,7 @@ a {
   }
 
   .mobile-hero {
-    min-height: min(52vh, 420px);
+    min-height: min(48vh, 380px);
     background: url("./Recursos/Imagen 2-03.jpg") center center / cover no-repeat;
   }
 
@@ -439,8 +454,8 @@ a {
     position: absolute;
     left: 0;
     right: 0;
-    top: 130px;
-    padding: 0px 65px;
+    top: 76px;
+    padding: 0 18px;
     z-index: 2;
     color: #fff;
   }
@@ -450,14 +465,16 @@ a {
     flex-direction: column;
     gap: 2px;
     width: 100%;
-    max-width: 340px;
+    max-width: 300px;
+    margin-left: 22px;
   }
 
   .mobile-hero-copy .hero__line {
     display: inline-block;
-    font-size: clamp(1.8rem, 7vw, 2.55rem);
+    font-size: clamp(1.82rem, 7vw, 2.45rem);
     line-height: 0.88;
-    padding: 0.08em 0.22em 0.14em 0.18em;
+    padding: 0.07em 0.24em 0.12em 0.18em;
+    letter-spacing: 0.01em;
     text-transform: uppercase;
     font-family: "Neue Plak Condensed", "Neue Plak", sans-serif;
     font-weight: 900;
@@ -474,55 +491,60 @@ a {
     color: var(--violet);
     background: var(--sky);
     margin-left: 0;
+    /* width: 100%; */
   }
 
   .mobile-hero-copy .hero__rules {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 340px;
-    margin: 10px 0 12px;
+    width: 58%;
+    /* max-width: 300px; */
+    margin: 8px 0 10px;
+    margin-left: 22px;
     position: relative;
     z-index: 3;
   }
 
   .mobile-hero-copy .hero__rules span:first-child {
-    width: 100%;
-    max-width: 28%;
+    width: 40%;
     height: 5px;
     background: var(--sky);
   }
 
   .mobile-hero-copy .hero__rules span:last-child {
-    width: 100%;
-    max-width: 28%;
+    width: 39%;
     height: 5px;
-    margin-left: 28%;
-    /* margin-top: 8px; */
+    margin-left: 40%;
+    /* margin-top: 7px; */
     background: rgba(255, 255, 255, 0.96);
-}
   }
 
   .mobile-hero-copy .hero__prompt {
-    width: 100%;
-    max-width: 340px;
-    font-size: 0.74rem;
-    padding: 0.3rem 0.52rem;
+    width: 70%;
+    /* max-width: 300px; */
+    font-size: 0.75rem;
+    padding: 0.34rem 0.5rem;
     display: flex;
     align-items: center;
+    /* justify-content: center; */
     background: rgba(255, 255, 255, 0.96);
     color: var(--violet);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     line-height: 1.15;
+    margin-left: 22px;
+    /* text-align: center; */
+    /* white-space: normal; */
+    /* text-wrap: balance; */
   }
 
   .mobile-hero-copy .hero__grid {
-    max-width: 340px;
+    width: 100%;
+    max-width: 280px;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-    width: min(100%, 560px);
-    margin-top: 28px;
+    gap: 6px;
+    margin-top: 10px;
+    margin-left: 22px;
   }
 
   .mobile-hero-copy .mode-card {
@@ -531,7 +553,7 @@ a {
     background: rgba(0, 0, 0, 0.14);
     color: #fff;
     border: 1px solid rgba(183, 227, 255, 0.8);
-    border-radius: 3px;
+    border-radius: 4px;
   }
 
   .mobile-hero-copy .mode-card__icon {
@@ -540,7 +562,7 @@ a {
   }
 
   .mobile-hero-copy .mode-card__text {
-    font-size: 0.64rem;
+    font-size: 0.66rem;
     white-space: nowrap;
   }
 
@@ -549,20 +571,20 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 14px 18px 28px;
+    padding: 8px 18px 26px;
     text-align: center;
   }
 
   .mobile-panel h1 {
-    margin-top: 8px;
-    font-size: clamp(2.1rem, 8vw, 3rem);
+    margin-top: 0;
+    font-size: clamp(2rem, 7.5vw, 2.8rem);
   }
 
   .mobile-panel .login-panel__eyebrow {
-    margin: 10px 0 16px;
+    margin: 14px 0 12px;
     text-align: center;
     color: var(--violet);
-    font-size: clamp(1rem, 1.35vw, 1.26rem);
+    font-size: clamp(0.95rem, 4.1vw, 1.05rem);
     line-height: 1;
     font-weight: 700;
     text-transform: uppercase;
@@ -572,11 +594,11 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: min(100%, 336px);
-    min-height: 50px;
-    padding: 0.82rem 0.95rem;
+    width: min(100%, 300px);
+    min-height: 46px;
+    padding: 0.72rem 0.9rem;
     margin: 0 auto;
-    background: var(--violet);
+    background: #6f0fb9;
     color: #fff;
     border-radius: 8px;
     white-space: nowrap;
@@ -587,7 +609,7 @@ a {
     align-items: center;
     justify-content: center;
     width: 100%;
-    font-size: 1rem;
+    font-size: 0.78rem;
     line-height: 1;
     text-align: center;
     gap: 5px;
@@ -599,38 +621,39 @@ a {
   }
 
   .mobile-panel .password-link {
-    margin-top: 12px;
-    font-size: 0.84rem;
+    margin-top: 6px;
+    font-size: 0.78rem;
     font-weight: 400;
   }
 
   .help-links--stacked {
-    width: min(100%, 336px);
-    margin-top: 26px;
+    width: min(100%, 300px);
+    margin-top: 14px;
     grid-template-columns: 1fr;
-    gap: 8px;
+    gap: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
   }
 
   .help-links--stacked .help-link {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    min-height: 34px;
-    padding: 0.45rem 7rem;
+    justify-content: center;
+    min-height: 38px;
+    padding: 0.45rem 0.7rem;
     background: var(--sky-soft);
     color: var(--violet);
     border-radius: 4px;
-    font-size: 0.7rem;
+    font-size: 0.78rem;
     font-weight: 700;
-    margin: 1.5% 0%;
-    align-content: stretch;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    box-shadow: 0 8px 18px rgba(111, 15, 185, 0.08);
+    gap: 7px;
   }
 
   .help-links--stacked .help-link__icon {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
   }
 
   .mobile-footer {
@@ -638,12 +661,12 @@ a {
     background: var(--violet);
     color: #fff;
     text-align: center;
-    padding: 16px 16px 18px;
+    padding: 14px 16px 16px;
   }
 
   .mobile-footer p {
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 700;
   }
 }
