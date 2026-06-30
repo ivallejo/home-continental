@@ -129,7 +129,7 @@ a {
 
   .hero__line {
     display: inline-block;
-    padding: 0.03em 0.19em 0.16em 0.16em;
+    padding: 0.03em 0.19em 0.25em 0.16em;
     line-height: 0.88;
     letter-spacing: 0.012em;
     text-transform: uppercase;
@@ -180,19 +180,22 @@ a {
   }
 
   .hero__prompt {
-    /* display: flex;
-    align-items: center;
-    justify-content: flex-start; */
-    /* width: min(100%, 500px); */
-    font-size: clamp(0.92rem, 1.2vw, 1.08rem);
-    line-height: 1.2;
+    display: flex;
+    /* width: fit-content; */
+    max-width: 61%;
+    font-size: clamp(1.27rem, 2vw, 1.27rem);
+    line-height: 1.15;
     padding: 0.34rem 0.68rem;
     background: rgba(255, 255, 255, 0.96);
     color: var(--violet);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-    /* max-width: 560px; */
-    width: 61%;
-    font-size: 1.4rem;
+    white-space: nowrap;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 5px;
+    width: min(100%, 900px);
   }
 
   .hero__prompt strong {
@@ -331,7 +334,7 @@ a {
     text-align: center;
     font-size: clamp(0.84rem, 0.95vw, 0.92rem);
     font-weight: 400;
-    margin: 7% 0%;
+    margin: 3% 0%;
   }
 
   .help-links {
@@ -356,6 +359,7 @@ a {
     font-size: clamp(0.84rem, 0.95vw, 0.96rem);
     font-weight: 700;
     box-shadow: 0 8px 18px rgba(111, 15, 185, 0.08);
+    font-size: 0.8rem;
   }
 
   .help-link__icon {
@@ -473,7 +477,7 @@ a {
     display: inline-block;
     font-size: clamp(1.82rem, 7vw, 2.45rem);
     line-height: 0.88;
-    padding: 0.07em 0.175em 0.12em 0.18em;
+    padding: 0.07em 0.175em 0.25em 0.18em;
     letter-spacing: 0.01em;
     text-transform: uppercase;
     font-family: "Neue Plak Condensed", "Neue Plak", sans-serif;
@@ -520,26 +524,25 @@ a {
   }
 
   .mobile-hero-copy .hero__prompt {
-    width: 70%;
-    /* max-width: 300px; */
-    font-size: 0.75rem;
-    padding: 0.34rem 0.5rem;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: flex-start;
+    width: fit-content;
+    max-width: 70%;
+    font-size: clamp(0.64rem, 2.2vw, 0.75rem);
+    padding: 0.34rem 0.5rem;
     background: rgba(255, 255, 255, 0.96);
     color: var(--violet);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     line-height: 1.15;
     margin-left: 22px;
-    /* text-align: center; */
-    /* white-space: normal; */
-    /* text-wrap: balance; */
+    white-space: nowrap;
+    box-sizing: border-box;
   }
 
   .mobile-hero-copy .hero__grid {
-    width: 100%;
-    max-width: 280px;
+    width: 65%;
+    /* max-width: 280px; */
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 6px;
@@ -548,12 +551,17 @@ a {
   }
 
   .mobile-hero-copy .mode-card {
-    min-height: 34px;
-    padding: 0 6px;
+    min-height: 26px;
+    padding: 4px 0px 4px 10px;
     background: rgba(0, 0, 0, 0.14);
     color: #fff;
-    border: 1px solid rgba(183, 227, 255, 0.8);
-    border-radius: 4px;
+    border: 0.5px solid rgba(183, 227, 255, 0.8);
+    border-radius: 1px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    /* font-size: 4px !important; */
   }
 
   .mobile-hero-copy .mode-card__icon {
@@ -562,8 +570,9 @@ a {
   }
 
   .mobile-hero-copy .mode-card__text {
-    font-size: 0.66rem;
+    font-size: 0.55rem;
     white-space: nowrap;
+    font-weight: bold;
   }
 
   .mobile-panel {
@@ -687,4 +696,56 @@ a {
   .mobile-panel h1 {
     font-size: 1.8rem;
   }
+}
+
+
+.hero__prompt_custom {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  width: min(100%, 900px);
+  /* font-size: 1.1rem; */
+  /* padding: 0.34rem 0.68rem; */
+  font-size: clamp(1.1rem, 1vw, 1.1rem);
+}
+
+.hero__prompt_custom div {
+  display: flex;
+}
+
+
+.hero__prompt_custom div strong {
+  color: var(--violet);
+  background: #fff;
+  width: fit-content;
+  max-width: 100%;
+  /* padding: 0.14rem 0.28rem 0.14rem 0.68rem; */
+  display: inline-block;
+  padding: 0.03em 0.19em 0.25em 0.16em;
+  line-height: 0.88;
+  letter-spacing: 0.012em;
+  /* text-transform: uppercase; */
+  /* font-family: &quot;Neue Plak Condensed&quot;, &quot;Neue Plak&quot;, sans-serif; */
+  font-size: clamp(1.1rem, 1vw, 1.1rem);
+  /* font-weight: 900; */
+}
+
+.hero__prompt_custom div div {
+  color: var(--violet);
+  background: #fff;
+  width: fit-content;
+  max-width: 100%;
+  padding: 0.14rem 0.68rem 0.14rem 0rem;
+  color: var(--violet);
+  background: #fff;
+  width: fit-content;
+  max-width: 100%;
+  /* padding: 0.14rem 0.28rem 0.14rem 0.68rem; */
+  display: inline-block;
+  padding: 0.03em 0.49em 0.25em 0.16em;
+  line-height: 0.88;
+  letter-spacing: 0.012em;
+  /* text-transform: uppercase; */
+  /* font-family: &quot;Neue Plak Condensed&quot;, &quot;Neue Plak&quot;, sans-serif; */
+  font-size: clamp(1.1rem, 1vw, 1.1rem);
 }
