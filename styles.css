@@ -104,21 +104,20 @@ a {
     z-index: 1;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: minmax(0, 1.35fr) minmax(380px, 0.95fr);
-    gap: clamp(24px, 3vw, 56px);
+    grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.9fr);
+    gap: clamp(20px, 2.5vw, 48px);
     align-items: center;
-    padding: clamp(28px, 4vw, 64px);
-    padding-top: 7%;
+    padding: clamp(24px, 3vw, 56px);
+    padding-top: clamp(32px, 5vh, 72px);
   }
 
   .hero {
     align-self: center;
-    padding-left: clamp(14px, 3vw, 56px);
-    padding-bottom: clamp(34px, 4vh, 94px);
+    padding-left: clamp(14px, 2.5vw, 48px);
+    padding-bottom: clamp(20px, 3vh, 64px);
     color: #fff;
-    max-width: 860px;
-    /* margin-top: 5%; */
-}
+    max-width: min(100%, 720px);
+  }
 
   .hero__block {
     display: grid;
@@ -152,7 +151,7 @@ a {
     letter-spacing: 0.012em;
     text-transform: uppercase;
     font-family: "Neue Plak Condensed", "Neue Plak", sans-serif;
-    font-size: clamp(3rem, 5.4vw, 5.6rem);
+    font-size: clamp(2.35rem, 4.2vw, 4.5rem);
     font-weight: 900;
   }
 
@@ -174,15 +173,14 @@ a {
   .hero__rules {
     display: flex;
     flex-direction: column;
-    /* gap: 8px; */
     width: min(100%, 560px);
-    margin: 12px 0 14px;
+    margin: 8px 0 10px;
     width: 61%;
   }
 
   .hero__rules span {
     display: block;
-    height: 9px;
+    height: 7px;
     /* border-radius: 2px; */
     background: rgba(183, 227, 255, 0.9);
   }
@@ -223,17 +221,17 @@ a {
   .hero__grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-    width: min(100%, 420px);
-    margin-top: 28px;
+    gap: 8px;
+    width: min(100%, 380px);
+    margin-top: 20px;
   }
 
   .mode-card {
     display: flex;
     align-items: center;
-    gap: 10px;
-    min-height: 44px;
-    padding: 0 8px;
+    gap: 8px;
+    min-height: 38px;
+    padding: 0 6px;
     background: rgba(0, 0, 0, 0.18);
     color: #fff;
     border: 1px solid rgba(183, 227, 255, 0.8);
@@ -250,27 +248,31 @@ a {
   }
 
   .mode-card__text {
-    font-size: clamp(0.98rem, 1.15vw, 1.08rem);
+    font-size: clamp(0.82rem, 1vw, 0.95rem);
     font-weight: 600;
   }
 
   .mode-card__icon {
     flex: 0 0 auto;
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     object-fit: contain;
   }
 
+  .home__desktop-aside {
+    width: min(100%, 460px);
+    justify-self: center;
+  }
+
   .login-panel {
-    /* justify-self: center; */
-    /* width: min(100%, 570px); */
-    /* padding: clamp(24px, 2.8vw, 40px) clamp(24px, 2.8vw, 40px) clamp(28px, 3vw, 44px); */
+    display: flex;
+    flex-direction: column;
+    min-height: clamp(460px, 54vh, 580px);
     background: var(--panel);
-    border-radius: 34px;
+    border-radius: 28px;
     box-shadow: var(--shadow);
     backdrop-filter: blur(14px);
-    /* width: 85%; */
-    padding: 18% 10%;
+    padding: clamp(32px, 4vw, 48px) clamp(20px, 2.5vw, 32px) clamp(40px, 5vw, 56px);
   }
 
   .brand {
@@ -283,32 +285,29 @@ a {
 
   .brand__logo {
     display: block;
-    width: min(100%, 480px);
-    max-width: 90%;
+    width: min(100%, 340px);
+    max-width: 88%;
     height: auto;
   }
 
   .login-panel h1,
   .mobile-panel h1 {
-    /* margin: 36px 0 0; */
     text-align: center;
-    /* font-size: clamp(1.9rem, 2.7vw, 3rem); */
     line-height: 0.96;
     font-weight: 700;
-    margin-top: 15%;
-    margin-bottom: 9%;
-    font-size: 2.2rem;
+    margin-top: clamp(24px, 3vw, 40px);
+    margin-bottom: clamp(12px, 1.8vw, 22px);
+    font-size: clamp(1.55rem, 2vw, 2rem);
   }
 
   .login-panel__eyebrow {
-    margin: 22px 0 12px;
+    margin: 0 0 clamp(20px, 2.8vw, 32px);
     text-align: center;
     color: var(--violet);
-    /* font-size: clamp(0.9rem, 1.1vw, 1.1rem); */
     line-height: 1;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: clamp(0.95rem, 1.1vw, 1.15rem);
   }
 
   .google-button {
@@ -317,10 +316,10 @@ a {
     align-items: center;
     justify-content: center;
     gap: 4px;
-    min-height: 50px;
-    padding: 0.85rem 1rem;
+    min-height: 48px;
+    padding: 0.8rem 0.9rem;
     margin: 0 auto;
-    width: min(100%, 420px);
+    width: min(100%, 360px);
     max-width: 100%;
     border-radius: 8px;
     background: var(--violet);
@@ -329,7 +328,6 @@ a {
   }
 
   .google-button__text {
-    font-size: clamp(0.9rem, 1.1vw, 1.02rem);
     line-height: 1;
     display: flex;
     width: 100%;
@@ -337,8 +335,8 @@ a {
     justify-content: center;
     gap: 6px;
     text-align: center;
-    margin-top: -4px;
-    font-size: 1.4rem;
+    margin-top: -2px;
+    font-size: clamp(0.95rem, 1.1vw, 1.15rem);
   }
 
   .google-button__brand {
@@ -348,19 +346,19 @@ a {
 
   .password-link {
     display: block;
-    margin-top: 8px;
+    margin: clamp(10px, 1.2vw, 14px) 0 clamp(20px, 2.5vw, 32px);
     text-align: center;
-    font-size: clamp(0.84rem, 0.95vw, 0.92rem);
+    font-size: clamp(0.78rem, 0.9vw, 0.88rem);
     font-weight: 400;
-    margin: 3% 0%;
   }
 
   .help-links {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-    margin-top: 20px;
-    width: min(100%, 420px);
+    gap: 8px;
+    margin-top: auto;
+    padding-top: clamp(16px, 2vw, 24px);
+    width: min(100%, 360px);
     justify-self: center;
   }
 
@@ -368,22 +366,21 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    min-height: 40px;
-    padding: 0.5rem 0.75rem;
+    gap: 8px;
+    min-height: 36px;
+    padding: 0.4rem 0.6rem;
     background: var(--sky-soft);
     color: var(--violet);
     border-radius: 4px;
-    font-size: clamp(0.84rem, 0.95vw, 0.96rem);
+    font-size: clamp(0.72rem, 0.85vw, 0.8rem);
     font-weight: 700;
     box-shadow: 0 8px 18px rgba(111, 15, 185, 0.08);
-    font-size: 0.8rem;
   }
 
   .help-link__icon {
     position: relative;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     flex: 0 0 auto;
   }
 
@@ -429,16 +426,118 @@ a {
   }
 
   .home__copyright {
-    grid-column: 2;
-    justify-self: center;
-    align-self: start;
-    margin: 6px 0 0;
-    width: min(100%, 540px);
+    margin: clamp(8px, 1vw, 12px) 0 0;
+    width: 100%;
     text-align: center;
     color: #fff;
-    font-size: clamp(1rem, 1.18vw, 1.32rem);
+    font-size: clamp(0.85rem, 1vw, 1.1rem);
     font-weight: 700;
     text-shadow: 0 3px 16px rgba(0, 0, 0, 0.45);
+  }
+}
+
+/* 1920x1080 @ 150% Windows scale ≈ 1280x720 CSS viewport */
+@media (min-width: 900px) and (max-width: 1400px) {
+  .home__desktop-content {
+    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.82fr);
+    gap: clamp(16px, 2vw, 32px);
+    padding: clamp(16px, 2.5vw, 40px);
+    padding-top: clamp(24px, 4vh, 48px);
+  }
+
+  .hero {
+    padding-left: clamp(10px, 2vw, 32px);
+    padding-bottom: clamp(12px, 2vh, 32px);
+    max-width: min(100%, 620px);
+  }
+
+  .hero__line {
+    font-size: clamp(2rem, 3.5vw, 3.25rem);
+  }
+
+  .hero__rules {
+    margin: 6px 0 8px;
+  }
+
+  .hero__rules span {
+    height: 6px;
+  }
+
+  .hero__grid {
+    gap: 6px;
+    width: min(100%, 340px);
+    margin-top: 16px;
+  }
+
+  .mode-card {
+    min-height: 34px;
+    gap: 6px;
+  }
+
+  .mode-card__text {
+    font-size: clamp(0.75rem, 0.95vw, 0.88rem);
+  }
+
+  .mode-card__icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .login-panel {
+    min-height: clamp(400px, 48vh, 480px);
+    border-radius: 24px;
+    padding: clamp(24px, 3vw, 36px) clamp(16px, 2vw, 24px) clamp(32px, 3.5vw, 44px);
+  }
+
+  .brand__logo {
+    width: min(100%, 280px);
+  }
+
+  .login-panel h1 {
+    font-size: clamp(1.35rem, 1.8vw, 1.65rem);
+    margin-top: clamp(18px, 2vw, 28px);
+    margin-bottom: clamp(10px, 1.2vw, 16px);
+  }
+
+  .login-panel__eyebrow {
+    font-size: clamp(0.82rem, 1vw, 0.95rem);
+    margin-bottom: clamp(16px, 2vw, 24px);
+  }
+
+  .google-button {
+    min-height: 44px;
+    width: min(100%, 320px);
+  }
+
+  .google-button__text {
+    font-size: clamp(0.85rem, 1vw, 1rem);
+  }
+
+  .help-links {
+    width: min(100%, 320px);
+    padding-top: 12px;
+  }
+
+  .help-link {
+    min-height: 32px;
+    font-size: 0.72rem;
+  }
+
+  .help-link__icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .home__copyright {
+    font-size: clamp(0.78rem, 0.95vw, 0.95rem);
+  }
+
+  .home__desktop-aside {
+    width: min(100%, 380px);
+  }
+
+  .hero__prompt_custom {
+    padding: 0.28em 0.32em;
   }
 }
 

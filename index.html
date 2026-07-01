@@ -48,7 +48,7 @@
               </a>
             </div>
           </section>
-          <div style="width: 85%;;">
+          <div class="home__desktop-aside">
 
             <aside class="login-panel" aria-label="Acceso de postulantes">
               <div class="brand">
@@ -172,8 +172,9 @@
           prompt.style.fontSize = "12px";
           prompt.style.letterSpacing = "0px";
 
+          var maxSize = window.innerWidth <= 1400 ? 28 : 40;
           var size = 12;
-          while (size < 56 && prompt.scrollWidth <= prompt.clientWidth) {
+          while (size < maxSize && prompt.scrollWidth <= prompt.clientWidth) {
             size += 0.25;
             prompt.style.fontSize = size + "px";
           }
